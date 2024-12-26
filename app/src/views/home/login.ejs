@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="/js/home/login.js"></script>
+    <script src="/js/home/login.js" defer></script>
   </head>
   <body>
-    <form>
-      <input type="text" placeholder="아이디를 입력하세요" />
-      <input type="text" placeholder="비밀번호를 입력하세요" />
-      <button>Log In</button>
+    <form id="login-form">
+      <input id="id" type="text" placeholder="아이디를 입력하세요" />
+      <input id="pwd" type="text" placeholder="비밀번호를 입력하세요" />
+      <button id="login-btn">Log In</button>
     </form>
   </body>
 </html>
