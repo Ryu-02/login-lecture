@@ -5,8 +5,8 @@ const router = express.Router(); // express의 Router를 불러온다.
 
 const ctrl = require("./home.ctrl"); // home.ctrl.js 파일을 불러온다.
 
-router.get("/", ctrl.hello);
-
-router.get("/login", ctrl.login);
+router.get("/", ctrl.output.home);
+router.get("/login", ctrl.output.login);
+router.post("/login", ctrl.process.login);
 
 module.exports = router; // 라우터를 내보낸다.
